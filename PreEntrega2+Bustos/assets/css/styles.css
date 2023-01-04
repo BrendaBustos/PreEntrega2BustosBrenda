@@ -1,0 +1,189 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&display=swap');
+
+/* ETIQUETAS TEXTOS*/
+
+* {
+    font-family: 'Klee One', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+#barra1{
+    display: flex;
+    flex-direction: column;
+    background-color:azure;    
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+#top{
+    display: flex;
+    flex-direction: column;
+        
+}
+
+.tendencias{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+}
+
+.imagenes__top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#tit_cli {
+    margin-left: 500px;
+}
+
+h1{
+    font-style: bold;
+    font-size: 50px;
+    font-weight: 200;  
+    color:black;
+    font-family: 'Fredoka One', cursive;    
+}
+
+h1 a {
+    text-decoration: none;
+    color:black;
+    font-family: 'Fredoka One', cursive;    
+}
+
+/*NAVEGADOR*/
+ 
+nav ul {
+    list-style: none;
+    font-size: 50px;
+}
+
+nav ul li {    
+    font-size: 20px;
+    font-style: solid;
+    display: inline-block;
+}
+
+nav ul li:hover ul{
+    display: block;     
+}
+
+nav ul li:hover ul li a{
+    background-color:azure; 
+    display: block;       
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;    
+}
+
+nav ul li a:hover {
+    color: pink;    
+}
+
+nav ul ul {
+    position: absolute;
+    display:none;
+}
+
+nav ul ul li{
+    display: block;
+}
+
+h2, h3 {
+    padding-top: 50px;
+}
+
+#clientes{
+    display: grid;
+    padding: 20px;
+    gap: 8px;
+    grid-template-columns: repeat(2,30%) 40%;
+    grid-template-rows: repeat(3,30%);
+    grid-template-areas: 
+    
+    "c1 c2 c3"
+    "c1 c4 c3"
+    
+    ;
+}
+
+.cliente1{
+    grid-area:c1;
+    background-color: brown;
+}
+
+.cliente2{
+    grid-area:c2;
+    background-color:blueviolet;
+}
+
+.cliente3{
+    grid-area:c3;
+}
+
+.cliente4{
+    grid-area:c4;
+    background-color:chartreuse;
+}
+
+#opciones{
+    display: flex;
+    flex-direction: row;
+}
+
+#tit_opciones{
+    margin-top: 0;
+}
+#productos{
+    display: grid;
+    gap: 2px;
+    padding: 50px;
+    grid-template-columns: 40% 50%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+    
+    "j1 i1"    
+    ;
+}
+
+.jabones{
+    grid-area:j1;
+    background-color:aquamarine;
+}
+
+p{
+    padding: 10px;
+}
+
+.img1{
+    grid-area:i1;
+}
+
+form {
+    padding-left: 100px;
+}
+
+@media only screen and (min-width:1280px){
+    #tit_cli {
+        margin-left: 390px;
+    }
+       
+}
+
+@media only screen and (min-width:768px){
+    #tit_cli {
+        margin-left: 200px;
+    }
+    #productos{
+        display: flex;
+        flex-direction: column;
+    }
+    
+}
+
